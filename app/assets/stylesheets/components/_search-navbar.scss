@@ -1,0 +1,189 @@
+// MENU-SIDES & SEARCH BAR
+
+.search-nav {
+  // THIS IS ORIGINAL CONTENT OF SEARCH NAV, WILL COMMENT SOME OUT -JBM
+  height: 70px;
+  position: sticky;
+  top: $main-nav-size;
+  margin-top: $main-nav-size;
+  // display: flex;
+  // justify-content: space-between;
+  // padding: 20px 40px 10px 40px;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+
+  // THESE ARE TRIAL STYLE SETTINGS -JBM
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  width: 100%;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+// NEW CLASSES
+
+// LEFT SIDE
+.app-tabs {
+  display: inline;
+}
+
+.app-tab a h1 {
+  float: left;
+  display: inline;
+  font-size: 1.125em;
+  padding: 4px 0px;
+  margin: 0px 8px;
+}
+
+.active-app-tab a h1 {
+  color: black;
+  border-bottom: 2px solid $main-blue;
+}
+
+.inactive-app-tab a h1 {
+  font-weight: lighter;
+  color: $dark-gray;
+}
+
+.inactive-app-tab h1:hover {
+  color: black;
+  border-bottom: 2px solid $main-blue;
+}
+
+// BUTTONS IN MIDDLE
+
+.button-box {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  // display: inline-block;
+  // flex-direction: row;
+  // align-items: flex-end;
+  // justify-content: space-around;
+
+  // div {
+  //   display: inline;
+  //   text-align: right;
+  // }
+
+  .drop-down-box {
+    align-items: center;
+    display: inline-block;
+    margin: $item-pad;
+
+    .bidder-dd {
+      background-color: $light-blue;
+      border-radius: $item-pad;
+      margin: 0 auto;
+      width: $body-width;
+    }
+  }
+
+  .actual-button-box {
+    display: inline-block;
+    text-align: right;
+
+    button {
+      display: inline-block;
+    }
+  }
+}
+
+// RIGHT SIDE / SEARCH BOX
+
+.search-box {
+  text-align: right;
+
+  // ADD 1/16TH PADDING ON THE RIGHT SO THAT SEARCH BAR DOESN'T GO ALL THE WAY OVER
+  // PADDING T R B L
+  padding: 0 0 0 6.25%;
+}
+
+// END JBM CLASSES
+
+// BELOW IS DEPRECATED -JBM
+
+// THE BAR ITSELF ALREADY HAS ITS PADDING
+// .simple_form {  // margin-left: 44em;
+
+//   padding-right: 15px;
+// }
+
+.menu-side {
+  width: 300px;
+  display: flex;
+  margin-top: 8px;
+}
+
+.menu-side p {
+  font-weight: 300;
+  padding-left: 15px;
+}
+
+#buy {
+  padding-left: 0px;
+}
+
+#buy .fa-square-full {
+  width: 18px;
+  color: $chat-blue;
+  padding-left: 8px;
+}
+
+#sell .fa-square-full {
+  color: $dot-high;
+  padding-left: 8px;
+}
+
+#sell {
+  padding-left: 50px;
+}
+
+
+// override btn-warning bg color 'cause of the .btn class of Lee's modul -BEA
+.btn-warning {
+  background-color: $light-blue;
+}
+
+// override the padding-top 'cause of teh form-group class of Lee's modul -BEA
+.search-form-control {
+  position: relative;
+  padding-top: 0px;
+
+
+  // INSTEAD OF SPECIFYING SIZE IN PIXELS
+  // width: 400px;
+
+  // MAKE IT SIZED BASED ON BOX IT'S IN
+  // THE 'BOX IT'S IN' IS ENCLOSING DIV NET OF MARGIN, PADDING, ETC
+  width: 100%
+}
+
+.fas {
+  color: $dark-gray;
+  font-size: 18px;
+}
+
+.search-form-control .btn {
+  display: flex;
+  position: absolute;
+  padding-left: 8px;
+  top: 4px;
+  bottom: 8px;
+  right: 8px;
+  margin: 0;
+}
+
+.search-form-control .form-control {
+  background-color: $light-blue;
+  height: 2.4rem;
+  border-radius: 8px;
+}
+
+.search-form-control .form-control:focus {
+  outline: none !important;
+}
+

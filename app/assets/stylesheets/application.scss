@@ -5,4 +5,18 @@
 @import "config/layout";
 
 // External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+@import "components/search-navbar";
+@import "pages/documents_index";
+@import "components/comments";
+@import "components/close-modal-button";
+@import "components/pretty-table";
+@import "pages/requests-index";
+@import "pages/deal-teams-index";
+@import "pages/deals-index";

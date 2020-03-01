@@ -1,0 +1,145 @@
+.comments-modal {
+  display: none; /* HIDDEN BY DEFAULT */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.comments-box {
+  width: 75%;
+  height: 87.5vh;
+  margin: 6.25vh auto;
+  background-color: $lighter-gray;
+  border-radius: 8px;
+  position: sticky;
+
+}
+
+.comments-title {
+  display: flex;
+  justify-content: space-between;
+  i {
+    font-size: 1.75em;
+  }
+  width: $body-width;
+  margin: 8px auto;
+  border-bottom: 2px solid $dark-gray;
+  height: 5vh;
+}
+
+.close-div {
+  display: flex;
+}
+
+.comments-container {
+  width: $body-width;
+  margin: 8px auto;
+
+  // COPIED FROM BEA'S GRID-CONTAINER-DEAL-TEAM WHICH SCROLLS -JBM
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-row-gap: 8px;
+  justify-items: center;
+  grid-auto-flow: row;
+
+  height: 50vh;
+  overflow: auto;
+  // border: 2px solid $dark-gray;
+  padding: $item-pad;
+  border-radius: $item-pad;
+  background-color: $body-background;
+}
+
+.comment-card {
+  width: 100%;
+  margin: 0 auto;
+  // border: 2px solid $dark-gray;
+  border-radius: 4px;
+  background-color: $pearl-white;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.global-scopediv {
+  border-left: 2px solid $dark-gray;
+  border-bottom: 2px solid $dark-gray;
+  border-bottom-left-radius: 4px;
+  background-color: $scope-global;
+}
+
+.transaction-scopediv {
+  border-left: 2px solid $dark-gray;
+  border-bottom: 2px solid $dark-gray;
+  border-bottom-left-radius: 4px;
+  background-color: $scope-tx;
+}
+
+.deal-team-scopediv {
+  border-left: 2px solid $dark-gray;
+  border-bottom: 2px solid $dark-gray;
+  border-bottom-left-radius: 4px;
+  background-color: $scope-team;
+}
+
+.my-entity-only-scopediv {
+  border-left: 2px solid $dark-gray;
+  border-bottom: 2px solid $dark-gray;
+  border-bottom-left-radius: 4px;
+  background-color: $scope-entity;
+}
+
+
+.comment-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-comment-form-container {
+  width: $body-width;
+  margin: 8px auto;
+  // border: 2px solid $dark-gray;
+  background-color: $body-background;
+  border-radius: 4px;
+  padding: 8px;
+  height: 25vh;
+  overflow: auto;
+
+  .form-group {
+  padding: 0px;
+  width: $body-width;
+  margin: 4px auto;
+  display: flex;
+  justify-content: space-between;
+
+    label {
+      padding-right: 8px;
+    }
+  }
+
+  .scope-and-submit-row {
+    width: $body-width;
+    margin: 4px auto;
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      margin: 4px auto;
+    }
+  }
+
+
+  div {
+  display: flex;
+  justify-content: space-between;
+  }
+}

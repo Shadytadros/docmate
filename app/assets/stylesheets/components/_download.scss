@@ -1,0 +1,17 @@
+.fa-file-download::before {
+  background-color: white;
+  color: #FFC700;
+  font-size: 2em;
+  vertical-align: middle;
+}
+
+.down {
+  border: none;
+  font-weight: 300;
+}
+
+.down:hover {
+  color: $dark-gray;
+}
+
+
