@@ -1,0 +1,21 @@
+// Specific CSS for your home-page
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100vh;
+  background-color: white;
+}
+
+p {
+
+font-family: $body-font;
+font-size: 1em; // 1em = 16px - main font-size of the <p>. See on Figma if some <p> has different size-BEA
+}
+
+h1 {
+  font-family: $headers-font; // hedear on blue navbar has letter-spacing -BEA
+  font-size: 1.5em;
+  color: $pearl-white;
+}
+

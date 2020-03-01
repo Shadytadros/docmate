@@ -1,0 +1,60 @@
+.search-nav-deal-team {
+    height: 90px;
+    position: sticky;
+    top: 100px;
+    margin-top: 100px;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 5fr 20%;
+    width: 100%;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+.subnav-deal-team {
+  margin-left: 20px;
+  width: 300px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+  }
+}
+
+.vdr h1 {
+  color: $dark-gray;
+  font-size: 1.125em;
+}
+
+.requests h1 {
+  color: $dark-gray;
+  font-size: 1.125em;
+  padding-bottom: 4px;
+}
+
+.teams h1 {
+  color: black;
+  font-size: 1.125em;
+  border-bottom: 2px solid $main-blue;
+  padding-bottom: 4px;
+}
+
+
+.vdr  h1:hover {
+    color: black;
+    border-bottom: 2px solid $main-blue;
+    padding-bottom: 4px;
+}
+
+.requests h1:hover {
+    color: black;
+    border-bottom: 2px solid $main-blue;
+    padding-bottom: 4px;
+  }
+
+

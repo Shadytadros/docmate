@@ -1,0 +1,202 @@
+// CARDS AND CSS GRID TEAMS#INDEX -BEA
+
+//cards and cssgrid PROJECT NAME -BEA
+.body-container-deal-team {
+position: fixed;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.container-headers-deal-team {
+  margin: 0px auto;
+  width: 80em;
+}
+
+.headers-deal-team {
+ box-shadow: 0px 1px 12px rgba(0,0,0,0.1);
+ background-color: $light-blue;
+ border-radius: 4px;
+ border-radius: 4px;
+ margin-left: 44px;
+ width: 74.5em;
+ height: 56px;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ justify-items: center;
+  h1 {
+   margin: 0px;
+   font-size: 1em;
+   font-weight: 700;
+   color: white;
+   color: $main-blue;
+   align-self: center;
+   text-transform: uppercase;
+  }
+}
+
+.all-grid {
+  width: 74.5em;
+  margin: 0px auto;
+  background-color: $light-blue;
+  display: flex;
+  box-shadow: 0px 1px 12px rgba(0,0,0,0.1);
+}
+
+.main-container-teams {
+  margin: 0px auto;
+  overflow: auto;
+  height: 630px;
+  width: 36.5em;
+}
+
+// hide google chrome browser scrolling sidebar -BEA
+.main-container-teams::-webkit-scrollbar {
+  display: none;
+}
+
+.grid-container-teams {
+  width: 36.5em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  justify-items: center;
+  grid-row-gap: 8px;
+  grid-auto-flow: row;
+}
+
+.entity-team-card {
+  padding: 30px 30px;
+  background-color: white;
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.entity-name-role {
+  background-color: $main-blue;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 400;
+  p {
+    margin-bottom: 0px;
+    padding: 10px 10px;
+  }
+}
+
+.user-team-card {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 10px;
+  p {
+    font-weight: 300;
+    margin-bottom: 0px;
+  }
+  .fa-envelope {
+  padding-top: 1px;// hide google chrome browser scrolling sidebar -BEA
+.main-container-deal-team::-webkit-scrollbar {
+  display: none;
+}
+  padding-left: 20px;
+  font-size: 1.47em;
+  }
+  .fa-phone-square {
+  padding-top: 2px;
+  padding-left: 15px;
+  }
+}
+
+// set for hover on icons
+.user-team-card i {
+  font-size: 1.35em;
+  color: $chat-blue;
+  transition: all 1.5s ease;
+}
+
+.user-team-card i:hover {
+  transition: all 1.5s ease;
+  color: $main-blue;
+  transform: scale(1.1);
+}
+
+//cards and cssgrid DEAL TEAM NAME -BEA
+
+.main-container-deal-team {
+  margin: 0px auto;
+  overflow: auto;
+  height: 630px;
+  width: 36.5em;
+}
+
+// hide google chrome browser scrolling sidebar -BEA
+.main-container-deal-team::-webkit-scrollbar {
+  display: none;
+}
+
+.grid-container-deal-team {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-row-gap: 8px;
+  justify-items: center;
+  grid-auto-flow: row;
+}
+
+.card-deal-team {
+  padding: 30px 30px;
+  background-color: white;
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.entity-team-name-role {
+ background-color: $main-blue;
+ border-radius: 4px;
+ color: white;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ text-transform: uppercase;
+ font-weight: 400;
+ p {
+   margin-bottom: 0px;
+   padding: 10px 10px;
+ }
+}
+
+.user-bidder {
+  font-weight: 300;
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 10px;
+  p {
+   margin-bottom: 0px;
+  }
+ .fa-envelope {
+  padding-top: 1px;
+  padding-left: 20px;
+  font-size: 1.47em;
+  }
+.fa-phone-square {
+  padding-top: 2px;
+  padding-left: 15px;
+  }
+}
+
+// set for hover on icons -BEA
+.user-bidder i {
+  font-size: 1.35em;
+  color: $chat-blue;
+  transition: all 1.5s ease;
+}
+
+.user-bidder i:hover {
+  transition: all 1.5s ease;
+  color: $main-blue;
+  transform: scale(1.1);
+}

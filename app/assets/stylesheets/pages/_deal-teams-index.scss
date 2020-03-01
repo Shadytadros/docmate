@@ -1,0 +1,73 @@
+.deal-teams-body {
+  width: $body-width;
+  margin: $main-tb-margin auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: $body-background;
+  border-radius: $item-pad;
+}
+
+.deal-team-box {
+  margin: 0 auto;
+  width: $body-width;
+
+  .deal-team-header {
+    // position: absolute;
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+
+  .entity-teams-box {
+    overflow: auto;
+
+  }
+
+  h1 {
+    text-align: center;
+    color: $main-blue;
+    padding: $item-pad;
+    font-size: 1.75em;
+  }
+}
+
+.entity-team-card {
+  padding: $item-pad;
+  width: $body-width;
+  margin: 0 auto;
+  margin-bottom: $section-pad;
+  background-color: $pearl-white;
+  border-radius: $item-pad;
+
+  .entity-team-card-title {
+    background-color: $main-blue;
+    border-radius: $item-pad;
+    width: $body-width;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: $item-pad;
+
+    h3 {
+      font-size: 1.25em;
+      color: $pearl-white;
+      padding: $item-pad;
+      font-family: $body-font;
+    }
+  }
+
+  .entity-team-card-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: $body-width;
+    margin: 0 auto;
+    padding: $item-pad;
+
+    .single-user-box {
+      // display: flex;
+      // justify-content: space-between;
+      padding: $item-pad;
+    }
+  }
+
+}

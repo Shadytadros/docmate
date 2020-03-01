@@ -1,0 +1,148 @@
+.body-container-requests {
+ position: fixed;
+ left: 50%;
+ transform: translateX(-50%);
+ margin: 0px;
+}
+
+.container-headers {
+  margin: 0px auto;
+  width: 80em;
+}
+
+.headers-requests {
+  box-shadow: 0px 1px 12px rgba(0,0,0,0.1);
+  background-color: $light-orange;
+  border-radius: 4px;
+  margin-left: 56px;
+  width: 73em;
+  height: 56px;
+  display: grid;
+  grid-template-columns: 0.2fr 0.3fr 0.15fr 0.3fr 0.6fr 1fr 1fr 0.2fr;
+  justify-items: center;
+  h1 {
+    margin: 0px;
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+    color: $main-blue;
+    align-self: center;
+    text-transform: uppercase;
+  }
+  .priority {
+    justify-self: start;
+  }
+  .description {
+    padding-left: 10px;
+    justify-self: start;
+  }
+}
+
+.main-container-requests {
+  overflow: auto;
+  height: 630px;
+}
+
+.grid-container-requests {
+  box-shadow: 0px 1px 12px rgba(0,0,0,0.1);
+  margin: 0px auto;
+  width: 73em;
+  background-color: $lighter-orange;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-row-gap: 8px;
+  grid-auto-flow: row;
+}
+
+// hide google chrome browser scrolling sidebar -BEA
+.main-container-requests::-webkit-scrollbar {
+ display: none;
+}
+
+.card-request {
+  background-color: white;
+  position: relative;
+  width: 73em;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 0.2fr 0.3fr 0.15fr 0.3fr 0.6fr 1fr 1fr 0.2fr;
+  justify-items: center;
+  align-items: center;
+  p {
+    margin: 0px;
+    padding: 16px 10px;
+    font-weight: 300;
+  }
+
+  .request-status p {
+    font-weight: 400;
+  }
+
+  .request-title p {
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+}
+
+.request-id p {
+  background-color: $light-orange;
+  font-weight: 400;
+  font-size: 0.9em;
+  padding: 7px 7px !important;
+  border-radius: 50%;
+}
+
+
+// set icon colors on response of priority behaviours -BEA
+.request-priority {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.check-box {
+  justify-self: start;
+}
+
+.request-priority {
+  justify-self: start;
+}
+
+#dot-critical i {
+  color: $dot-high;
+  font-size: 0.9em;
+  text-shadow: 1px 2px 2px rgba(0,0,0,0.1);
+}
+
+#dot-high i {
+  color: $icon-orange;
+  font-size: 0.9em;
+  text-shadow: 1px 2px 2px rgba(0,0,0,0.1);
+}
+
+#dot-low i {
+  color: $dot-low;
+  font-size: 0.9em;
+  text-shadow: 1px 2px 2px rgba(0,0,0,0.1);
+}
+
+.request-description {
+  justify-self: start;
+}
+
+.comments-icon i {
+  color: $chat-blue;
+  font-size:  1.4em;
+  align-self: center;
+  text-shadow: 1px 2px 3px rgba(  22.7, 29, 100,0.2);
+  transition: all 1.5s ease;
+}
+
+.comments-icon i:hover {
+  color: $main-blue;
+  transform: scale(1.1);
+
+}

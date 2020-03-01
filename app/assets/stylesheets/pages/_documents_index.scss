@@ -1,0 +1,78 @@
+.documents-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: $body-width;
+
+  // background-color: $body-background;
+  // border-radius: 8px;
+
+  margin: $main-tb-margin auto;
+  // padding: $section-pad;
+
+  h4 {
+    font-size: 1.2em;
+    margin: 0;
+    color: $main-blue;
+  }
+}
+
+.documents-sidebar {
+  grid-area: 1 / 1 / 6 / 2;
+  // border-right: 2px solid black;
+
+  background-color: $body-background;
+  border-radius: 8px;
+  // margin: $item-pad;
+  margin-right: $item-pad;
+  padding: $section-pad;
+
+  ul {
+    margin-left: $item-pad;
+    text-decoration: none;
+  }
+
+  i {
+    color: $hot-blue;
+  }
+
+  i:hover {
+    color: $hot-blue;
+    // display: none;
+  }
+}
+
+.documents-display {
+  grid-area: 1 / 2 / 6 / 6;
+  padding: 0 8px;
+
+  background-color: $body-background;
+  border-radius: 8px;
+  // margin: $item-pad;
+  margin-left: $item-pad;
+  padding: $section-pad;
+}
+
+ul.tree.open {
+  display: block;
+}
+
+ul.tree.closed {
+  display: none;
+}
+
+ul.tree i:hover {
+  color: darken($hot-blue, 10%);
+}
+
+ul.tree span {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
