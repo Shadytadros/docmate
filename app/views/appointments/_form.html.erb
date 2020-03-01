@@ -1,0 +1,6 @@
+<%= simple_form_for @appointment, method: :post, remote: true do |f| %>
+
+  <%= f.input :time, label: "date and time", label_html: { class: 'my_class' } %>
+  <%= f.input :patient, label: "patient name", collection: current_user.patients.name %>
+  <%= f.button :submit %>
+<% end %>
