@@ -1,0 +1,175 @@
+.form-control {
+  background-color: #E6E8F1;
+}
+
+.trigger {
+  border: none;
+  padding: 0;
+  background: none;
+  // TURN OFF PADDING-BOTTOM TO FIT BETTER ON SEARCH BAR- BEA
+  //padding-bottom: 14px;
+  // SWITCH OFF those properties to fit better btn on search-bar -BEA
+  // margin-left: 44em;
+  //margin-right: 3.2em;
+  font-weight: 300;
+}
+
+.trigger2 {
+  border: none;
+  padding: 0;
+  background: none;
+  // TURN OFF PADDING-BOTTOM TO FIT BETTER ON SEARCH BAR- BEA
+  //padding-bottom: 14px;
+  // SWITCH OFF those properties to fit better btn on search-bar -BEA
+  // margin-left: 44em;
+  //margin-right: 3.2em;
+  font-weight: 300;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.form-group {
+  padding-top: 10px;
+  width: 100%;
+}
+
+
+label.string.required {
+  margin-top: 10px;
+
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+  min-width: 60vh;
+  max-width: auto;
+  height: auto;
+  vertical-align: right;
+  font-weight: 300;
+  select {
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+
+.btn {
+  float: right;
+  color: #FCF9EA;
+  background-color: $main-blue;
+  font-weight: 300;
+  border-radius: 0.5rem;
+  padding: 5px 5px;
+  margin: 0px -5px;
+  font-size: 0.8em;
+}
+
+.btn:hover {
+  color: $dark-gray;
+}
+
+#deal_target_id {
+  font-weight: 300;
+}
+
+.close-button {
+  float: left;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+  background-color: $main-blue;
+  color: white;
+  font-size: 3em;
+  padding: 3px 4px;
+}
+
+.close-button2 {
+  float: left;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+  background-color: $main-blue;
+  color: white;
+  font-size: 3em;
+  padding: 3px 4px;
+}
+
+
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.blue-rectangle {
+  display: block !important;
+  width: 100%;
+  height: 36px;
+  background-color: $main-blue;
+  z-index: 1;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  display: block;
+  color: #33418A;
+  img {
+    width: 55px;
+    float: right;
+    margin: 8px 7px;
+  }
+}
+
+
+.fa-plus-circle::before {
+  font-size: 1em;
+  color: $main-blue;
+  // add padding to plus-icon to space it from text- BEA
+  padding-left: 10px;
+}
+
+
+.text-button-trigger {
+  font-size: 16px;
+  // put off width from text button -BEA
+  //width: 140px;
+  display: flex;
+  align-items: center;
+}

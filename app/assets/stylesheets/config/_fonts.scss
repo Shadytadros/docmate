@@ -1,0 +1,9 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Playfair+Display:700,900&display=swap');
+// Define fonts for body and headers
+
+// Set new fonts for headers and paragraph
+// text-grid Bidder and Requests will be only <p> , please check layout on Figma -BEA
+$body-font: 'Fira Sans', sans-serif;
+// Headers <h1> will be only on navbar components-BEA
+$headers-font: 'Playfair Display', serif;
